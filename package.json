@@ -6,6 +6,9 @@
         "build": "vite build",
         "dev": "vite"
     },
+    "engines": {
+        "node": "22.x"
+    },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
         "@vitejs/plugin-react": "^4.7.0",
