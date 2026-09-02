@@ -50,8 +50,14 @@
             "@php artisan test"
         ],
         "post-autoload-dump": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-            "@php artisan package:discover --ansi"
+            "@php artisan key:generate --ansi",
+            "@php artisan package:discover --ansi",
+            "npm install",
+            "npm run build",
+            "@php -r \"file_exists('database/database.sqlite') || touch('database/database.sqlite');\"",
+            "@php artisan migrate --force"
         ],
         "post-update-cmd": [
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
