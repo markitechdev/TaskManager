@@ -1,4 +1,13 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Task Manager (Laravel + React Inertia)
+
+This project is built using Laravel for the backend and React with Inertia.js for the frontend.
+
+## Project Structure (Frontend vs Backend)
+
+Because this uses Inertia, the frontend and backend are housed within the same repository. To keep things organized, we've documented the separation:
+
+- **[Backend Folder (`app/`)](app/README.md)**: Contains all server-side logic, routing, request handling, and database modeling with Eloquent.
+- **[Frontend Folder (`resources/`)](resources/README.md)**: Contains all client-side logic, React components, and styling.
 
 <p align="center">
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
